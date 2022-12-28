@@ -14,7 +14,7 @@ variables:
   webAppName: 'lng-udacity'
 
   # Image name
-  poolName: 'Default'
+  poolName: 'Azure Pipelines'
 
   # Environment name
   environmentName: 'lng-udacity'
