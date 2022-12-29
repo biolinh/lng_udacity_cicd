@@ -74,6 +74,8 @@ udacity@Azure:~$ ./make_predict_azure_app.sh
 az webapp log tail -g ODL-clouddevops-220639 -n devops
 ```
 
+![log](image/log.png)
+
 ## Enhancements
 
 - Should apply branch model. main/master branch for release. and orther branch for feature and dev environment. So that each environment we have a set of resources and its own pipeline. Developer just merge the code to target branch, pipieline will auto run
@@ -82,6 +84,5 @@ az webapp log tail -g ODL-clouddevops-220639 -n devops
 
 
 ## Demo 
-[Demo]()
 
-
+[demo](https://youtu.be/fMST_wl5ttg)
