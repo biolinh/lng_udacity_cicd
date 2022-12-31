@@ -33,6 +33,11 @@ az webapp up -n "lng-udacity-wa" --runtime "PYTHON:3.8"
 
 ```
 ![image/webapp-run.png](image/webapp-run.png)
+
+
+* Azure Azure App Service
+
+![image/webapp.png](image/webapp.png)
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 
 ```bash
@@ -41,6 +46,7 @@ make all
 ```
 * Output of a test run
 Testing result: After above step you see dependencies are installed, lint rate 9.69/10 and test with error:
+
 ```
  app.py:37:4: W0702: No exception type(s) specified (bare-except)
 
@@ -65,6 +71,7 @@ The output should look similar to this:
 udacity@Azure:~$ ./make_predict_azure_app.sh
 
 ```
+![image/prediction.png](image/prediction.png)
 
 * Output of streamed log files from deployed application
 
@@ -86,3 +93,4 @@ az webapp log tail -g ODL-clouddevops-220639 -n lng-udacity-wa
 [demo](https://youtu.be/fMST_wl5ttg)
 
 
+NOTE: the code dont have locustfile.py
