@@ -29,9 +29,10 @@ git clone https://github.com/biolinh/lng_udacity_cicd
 ![clone](image/clone.png)
 
 ```bash
-az webapp up -n "lng-udacity" --runtime "PYTHON:3"
+az webapp up -n "lng-udacity-wa" --runtime "PYTHON:3.8"
 
 ```
+![image/webapp-run.png](image/webapp-run.png)
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 
 ```bash
@@ -54,9 +55,6 @@ make: *** [Makefile:15: lint] Error 4
 
 ![pipeline](image/pipeline.png)
 
-```bash
-flask-sklearn/make_predict_azure_app.sh
-```
 * Running Azure App Service from Azure Pipelines automatic deployment
 
 
@@ -71,7 +69,7 @@ udacity@Azure:~$ ./make_predict_azure_app.sh
 * Output of streamed log files from deployed application
 
 ```bash
-az webapp log tail -g ODL-clouddevops-220639 -n devops
+az webapp log tail -g ODL-clouddevops-220639 -n lng-udacity-wa
 ```
 
 ![log](image/log.png)
@@ -86,3 +84,5 @@ az webapp log tail -g ODL-clouddevops-220639 -n devops
 ## Demo 
 
 [demo](https://youtu.be/fMST_wl5ttg)
+
+
